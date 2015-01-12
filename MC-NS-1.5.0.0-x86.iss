@@ -11,7 +11,7 @@ AppVersion=1.5.0.0
 ;AppVerName=Microcontador 1.5.0.0
 AppPublisher=Nintersoft
 AppPublisherURL=http://www.nintersoft.ml/
-AppSupportURL=http://www.nintersoft.ml/
+AppSupportURL=http://www.nintersoft.ml/suporte/
 AppUpdatesURL=http://www.nintersoft.ml/
 DefaultDirName={pf}\Microcontador
 DefaultGroupName=Microcontador
@@ -35,14 +35,14 @@ Source: "C:\Users\Mauro\Desktop\Microcontador\*"; DestDir: "{app}"; Flags: ignor
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\Microcontador"; Filename: "{app}\Microcontador.exe"
+Name: "{group}\Microcontador"; Filename: "{app}\bin\aMicrocontador.exe"
 Name: "{group}\{cm:ProgramOnTheWeb,Microcontador}"; Filename: "http://www.nintersoft.ml/"
 Name: "{group}\{cm:UninstallProgram,Microcontador}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\Microcontador"; Filename: "{app}\Microcontador.exe"; Tasks: desktopicon
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Microcontador"; Filename: "{app}\Microcontador.exe"; Tasks: quicklaunchicon
+Name: "{commondesktop}\Microcontador"; Filename: "{app}\bin\Microcontador.exe"; Tasks: desktopicon
+Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Microcontador"; Filename: "{app}\bin\Microcontador.exe"; Tasks: quicklaunchicon
 
 [Run]
-Filename: "{app}\Microcontador.exe"; Description: "{cm:LaunchProgram,Microcontador}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\bin\Microcontador.exe"; Description: "{cm:LaunchProgram,Microcontador}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
 Filename: http://www.nintersoft.ml/suporte/; Flags: shellexec
