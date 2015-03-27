@@ -13,13 +13,13 @@ AppPublisher=Nintersoft
 AppPublisherURL=http://www.nintersoft.ml/
 AppSupportURL=http://www.nintersoft.ml/suporte/
 AppUpdatesURL=http://www.nintersoft.ml/
-DefaultDirName={pf}\Ninterpres
+DefaultDirName={pf}\Nintersoft\Ninterpres
 DisableDirPage=yes
 DefaultGroupName=Ninterpres
 AllowNoIcons=yes
-OutputDir=C:\Users\Mauro\Desktop\Ninterpres\Compilado
+OutputDir=C:\Users\Mauro\Desktop\Compilado
 OutputBaseFilename=Ninterpres_0.9_BETA
-SetupIconFile=C:\Users\Mauro\Documents\GitHub\Ninterpres\Logo\NPS_Logo_50.ico
+SetupIconFile=C:\Users\Mauro\Documents\GitHub\Ninterpres\IMGS\Logo\NPS_Logo_50.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -31,8 +31,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\Mauro\Desktop\Ninterpres\Ninterpres.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Mauro\Desktop\Ninterpres\BIN\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\Users\Mauro\Desktop\Ninterpres\Ninterpres.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Mauro\Desktop\Ninterpres\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
