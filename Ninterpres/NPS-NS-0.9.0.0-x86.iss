@@ -31,7 +31,6 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-;Source: "C:\Users\Mauro\Desktop\Ninterpres\Ninterpres.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Mauro\Desktop\Ninterpres\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
