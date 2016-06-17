@@ -27,7 +27,7 @@ BackSolid=yes
 ChangesAssociations=yes
 UninstallDisplayName=Microcontador
 UninstallDisplayIcon={app}\Despertador.exe
-Compression=lzma
+Compression=lzma2/max
 SolidCompression=yes
 ArchitecturesInstallIn64BitMode = x64 ia64
 
@@ -40,7 +40,27 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; OnlyBelowVersion: 0,6.1
 
 [Files]
+Source: "C:\Users\Mauro\Documents\Completo\Extra\vc_redist.x64.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall; AfterInstall: InstMSVSC
 Source: "C:\Users\Mauro\Documents\Completo\Microcontador\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+[Code]
+procedure ExitProcess(exitCode:integer);
+  external 'ExitProcess@kernel32.dll stdcall';
+
+procedure InstMSVSC;
+var
+  ResultCode: Integer;       
+begin
+  if not FileExists(ExpandConstant('{sys}\MSVCP140.DLL'))
+  then
+    if not Exec(ExpandConstant('{tmp}\vc_redist.x64.exe'), '', '', SW_SHOWNORMAL,
+      ewWaitUntilTerminated, ResultCode)
+    then
+      ExitProcess(1);
+  if not FileExists(ExpandConstant('{sys}\MSVCP140.DLL'))
+  then
+  ExitProcess(1);
+end;
 
 [Icons]
 Name: "{group}\Microcontador"; Filename: "{app}\Despertador.exe"
