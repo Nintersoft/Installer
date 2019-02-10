@@ -1,20 +1,20 @@
 [Setup]
-AppId={{FA42DA9E-E371-46DB-9F7A-234BC36FA005}
-AppName=Ninterserial
-AppVersion=1.0.0.0
+AppId={{B9117D43-16E8-487A-9795-47068087BE65}
+AppName=SmartClass
+AppVersion=0.9.2.2
 AppPublisher=Nintersoft
 AppContact=http://www.nintersoft.com/suporte/contate-nos
 AppPublisherURL=http://www.nintersoft.com/
-AppSupportURL=http://docwiki.nintersoft.com/Ninterserial/
+AppSupportURL=http://docwiki.nintersoft.com/SmartClass/
 AppUpdatesURL=http://www.nintersoft.com/
-AppCopyright=Copyright (C) 2013-2016 Nintersoft.
-DefaultDirName={pf}\Nintersoft\Ninterserial
+AppCopyright=Copyright (C) 2013-2018 Nintersoft.
+DefaultDirName={pf}\Nintersoft\SmartClass
 DisableDirPage=yes
-DefaultGroupName=Ninterserial
+DefaultGroupName=SmartClass
 AllowNoIcons=yes
-OutputDir=C:\Users\Mauro\Desktop\Ninterserial
-OutputBaseFilename=ninterserial-1.0.0.0_x64
-SetupIconFile=C:\Users\Mauro\Documents\GitHub\Ninterserial\imgs\Ninterserial.ico
+OutputDir=C:\Users\Mauro\Desktop\SmartClass
+OutputBaseFilename=smartclass-0.9.2.2_x64
+SetupIconFile=C:\Users\Mauro\Documents\GitHub\SmartClass\images\logos\Logo.ico
 LicenseFile=C:\Users\Mauro\Documents\Nintersoft\Licença de Código Aberto Nintersoft rev1-inst.rtf
 UsePreviousAppDir=yes
 UsePreviousGroup=yes
@@ -25,8 +25,8 @@ UsePreviousUserInfo=yes
 BackColor=$090067
 BackSolid=yes
 ChangesAssociations=yes
-UninstallDisplayName=Ninterserial
-UninstallDisplayIcon={app}\Ninterserial.exe
+UninstallDisplayName=SmartClass
+UninstallDisplayIcon={app}\SmartClass.exe
 Compression=lzma2/max
 SolidCompression=yes
 ArchitecturesInstallIn64BitMode = x64 ia64
@@ -41,7 +41,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 Source: "C:\Users\Mauro\Documents\Completo\Extra\vc_redist.x64.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall; AfterInstall: InstMSVSC
-Source: "C:\Users\Mauro\Documents\Completo\Ninterserial\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Mauro\Documents\Completo\SmartClass_x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Code]
 procedure ExitProcess(exitCode:integer);
@@ -63,15 +63,15 @@ begin
 end;
 
 [Icons]
-Name: "{group}\Ninterserial"; Filename: "{app}\Ninterserial.exe"
+Name: "{group}\SmartClass"; Filename: "{app}\SmartClass.exe"
 Name: "{group}\Licença de código aberto"; Filename: "{app}\Licença de Código Aberto Nintersoft rev1.pdf"
-Name: "{group}\{cm:ProgramOnTheWeb,Ninterserial}"; Filename: "http://www.nintersoft.com/"
-Name: "{group}\{cm:UninstallProgram,Ninterserial}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\Ninterserial"; Filename: "{app}\Ninterserial.exe"; Tasks: desktopicon
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Minterserial"; Filename: "{app}\Ninterserial.exe"; Tasks: quicklaunchicon
+Name: "{group}\{cm:ProgramOnTheWeb,SmartClass}"; Filename: "http://www.nintersoft.com/"
+Name: "{group}\{cm:UninstallProgram,SmartClass}"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\SmartClass"; Filename: "{app}\SmartClass.exe"; Tasks: desktopicon
+Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\SmartClass"; Filename: "{app}\SmartClass.exe"; Tasks: quicklaunchicon
 
 [Run]
-Filename: "{app}\Ninterserial.exe"; Description: "{cm:LaunchProgram,Ninterserial}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\SmartClass.exe"; Description: "{cm:LaunchProgram,SmartClass}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
 Filename: http://www.nintersoft.com/suporte/por-que-voce-nos-deixou/; Flags: shellexec

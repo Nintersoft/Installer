@@ -1,21 +1,21 @@
 [Setup]
-AppId={{E793E563-0452-414A-8271-793F7DD7BDC0}
-AppName=Rubix
-AppVersion=0.9.0.1                
+AppId={{99AB7D2D-B097-47DA-968D-AEB579784EEC}
+AppName=SmartClass
+AppVersion=1.0.0.32
 AppPublisher=Nintersoft
 AppContact=http://www.nintersoft.com/suporte/contate-nos
 AppPublisherURL=http://www.nintersoft.com/
-AppSupportURL=http://docwiki.nintersoft.com/cubo-magico/
+AppSupportURL=http://docwiki.nintersoft.com/smartclass/
 AppUpdatesURL=http://www.nintersoft.com/
-AppCopyright=Copyright (C) 2013-2016 Nintersoft.
-DefaultDirName={pf}\Nintersoft\Rubix
+AppCopyright=Copyright (C) 2013-2019 Nintersoft.
+DefaultDirName={pf}\Nintersoft\SmartClass
 DisableDirPage=yes
-DefaultGroupName=Rubix
+DefaultGroupName=SmartClass
 AllowNoIcons=yes
-OutputDir=C:\Users\Mauro\Desktop\Rubix
-OutputBaseFilename=rubix-0.9.0.1_x86
-SetupIconFile=C:\Users\Mauro\Documents\GitHub\rubix\Images\Icon.ico
-LicenseFile=C:\Users\Mauro\Documents\Completo\Rubix_x86\LICENSE.txt
+OutputDir=C:\Users\Mauro\Desktop\SmartClass
+OutputBaseFilename=smartclass-1.0.0.32_x86
+SetupIconFile=C:\Users\Mauro\Documents\GitHub\SmartClass\images\logos\Logo.ico
+LicenseFile=C:\Users\Mauro\Documents\Nintersoft\Licença de Código Aberto Nintersoft rev1-inst.rtf
 UsePreviousAppDir=yes
 UsePreviousGroup=yes
 UsePreviousLanguage=yes
@@ -25,8 +25,8 @@ UsePreviousUserInfo=yes
 BackColor=$090067
 BackSolid=yes
 ChangesAssociations=yes
-UninstallDisplayName=Rubix
-UninstallDisplayIcon={app}\Rubix.exe
+UninstallDisplayName=SmartClass
+UninstallDisplayIcon={app}\SmartClass.exe
 Compression=lzma2/max
 SolidCompression=yes
 
@@ -40,7 +40,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 Source: "C:\Users\Mauro\Documents\Completo\Extra\vc_redist.x86.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall; AfterInstall: InstMSVSC
-Source: "C:\Users\Mauro\Documents\Completo\Rubix_x86\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Mauro\Documents\Completo\SmartClass\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Code]
 procedure ExitProcess(exitCode:integer);
@@ -62,15 +62,15 @@ begin
 end;
 
 [Icons]
-Name: "{group}\Rubix"; Filename: "{app}\Rubix.exe"
-Name: "{group}\Open source code license"; Filename: "{app}\LICENSE.txt"
-Name: "{group}\{cm:ProgramOnTheWeb,Rubix}"; Filename: "http://www.nintersoft.com/"
-Name: "{group}\{cm:UninstallProgram,Rubix}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\Rubix"; Filename: "{app}\Rubix.exe"; Tasks: desktopicon
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Rubix"; Filename: "{app}\Rubix.exe"; Tasks: quicklaunchicon
+Name: "{group}\SmartClass"; Filename: "{app}\SmartClass.exe"
+Name: "{group}\Licença de código aberto"; Filename: "{app}\Licença de Código Aberto Nintersoft rev1.pdf"
+Name: "{group}\{cm:ProgramOnTheWeb,SmartClass}"; Filename: "http://www.nintersoft.com/"
+Name: "{group}\{cm:UninstallProgram,SmartClass}"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\SmartClass"; Filename: "{app}\SmartClass.exe"; Tasks: desktopicon
+Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\SmartClass"; Filename: "{app}\SmartClass.exe"; Tasks: quicklaunchicon
 
 [Run]
-Filename: "{app}\Rubix.exe"; Description: "{cm:LaunchProgram,Rubix}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\SmartClass.exe"; Description: "{cm:LaunchProgram,SmartClass}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
 Filename: http://www.nintersoft.com/suporte/por-que-voce-nos-deixou/; Flags: shellexec
